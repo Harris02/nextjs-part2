@@ -16,7 +16,7 @@ export default function Home() {
     </div>
 
     <div className='flex flex-row items-center justify-center gap-36 mt-40'>
-      <Image src="/kotak.jpeg" width={500} height={500}/>
+      <Image src="/kotak.jpeg" alt="gambar-index" width={500} height={500}/>
       <div className='mx-4'>
       <h1 className='font-bold text-3xl overflow-ellipsis'>My Best Friends in <br/>Junior High-School</h1>
       <button className='border-2 bg-black text-white p-3 mt-2' type='button'>Read My Journey</button>
@@ -28,7 +28,7 @@ export default function Home() {
       <h1 className='font-bold text-3xl overflow-ellipsis'>My Activities<br/> during<br/> This Holiday</h1>
       <button className='border-2 bg-black text-white p-3 mt-2' type='button'>My Activities</button>
     </div>
-    <Image src="/kotak2.jpeg" width={500} height={500}/>
+    <Image src="/kotak2.jpeg" alt="gambar-index-2" width={500} height={500}/>
     </div>
     <Footer/>
 

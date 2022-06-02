@@ -15,7 +15,7 @@ export default function Header(){
         <nav className="flex flex-row items-center justify-center" >
         
         <div className="basis-4/5 p-3 ml-3">
-        <Gambar asal="/favicon.ico" tautan="/" width={50} height={50}/>
+        <Gambar asal="/favicon.ico" alt="kepala" tautan="/" width={50} height={50}/>
         </div>
 
         <div className="basis-1/5 flex flex-row">
