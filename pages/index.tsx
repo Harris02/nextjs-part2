@@ -9,14 +9,14 @@ export default function Home() {
     <>
     <HeadMats img="/home.svg" title="Home Page"/>
     <Header/>
-    <main className='px-28 lg:px-14 sm:px-7 bg-slate-800'>
+    <main className='px-28 lg:px-14 sm:px-4 bg-slate-800'>
     <section className='text-white font-semibold flex flex-row lg:items-center lg:flex-col-reverse py-10 lg:bg-slate-700 lg:rounded-2xl lg:mb-7'>
-      <div className='justify-center lg:text-center flex flex-col lg:w-1/2 sm:w-full'>
+      <div className='justify-center lg:text-center flex flex-col lg:w-1/2 sm:w-full sm:px-2'>
         <h1 className='text-4xl font-bold  lg:text-xl'>Hi Guys! <br/> I am Khairul Ihsannudin</h1>
         <h2 className='w-1/2 lg:w-full text-xl font-medium lg:text-lg'>Cheers! Nothing special about me. But I am developing myself into a better one. Hope it goes well</h2>
         <h2 className='py-3' >Contact Me</h2>
       </div>
-      <div>
+      <div className='md:w-1/2'>
         <Image className='rounded-full' src="/Introducing.jpg" alt="profil" width={400} height={400}/>
       </div>
     </section>
