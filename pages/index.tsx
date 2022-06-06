@@ -2,36 +2,66 @@ import Image from 'next/image'
 import HeadMats from '../components/headMats'
 import Header from '../components/header'
 import Link from 'next/link'
+import Container from '../components/container'
 import Footer from '../components/footer'
-
 export default function Home() {
   return (
     <>
     <HeadMats img="/home.svg" title="Home Page"/>
     <Header/>
-    <div className='box-border text-center mt-32'>    
-    <h1 className=' p-10 text-3xl overflow-ellipsis'>Hello! I'm <span className='font-bold'>Ihsan</span>.<br/> I learn anything attracted me but never finish what I've learnt LOL.</h1>
-    <h2>Click the button below to know more <Link href="/about"><a className='text-blue-600'>About Me</a></Link></h2>
-    <button type='button' className='m-3 p-8 border-black border-4 rounded-full'><Link href="about"><a>ABOUT ME</a></Link></button>
-    </div>
-
-    <div className='flex flex-row items-center justify-center gap-36 mt-40'>
-      <Image src="/kotak.jpeg" alt="gambar-index" width={500} height={500}/>
-      <div className='mx-4'>
-      <h1 className='font-bold text-3xl overflow-ellipsis'>My Best Friends in <br/>Junior High-School</h1>
-      <button className='border-2 bg-black text-white p-3 mt-2' type='button'>Read My Journey</button>
+    <main className='px-28 lg:px-14 sm:px-7 bg-slate-800'>
+    <section className='text-white font-semibold flex flex-row lg:items-center lg:flex-col-reverse py-10 lg:bg-slate-700 lg:rounded-2xl lg:mb-7'>
+      <div className='justify-center lg:text-center flex flex-col lg:w-1/2 sm:w-full'>
+        <h1 className='text-4xl font-bold  lg:text-xl'>Hi Guys! <br/> I am Khairul Ihsannudin</h1>
+        <h2 className='w-1/2 lg:w-full text-xl font-medium lg:text-lg'>Cheers! Nothing special about me. But I am developing myself into a better one. Hope it goes well</h2>
+        <h2 className='py-3' >Contact Me</h2>
       </div>
-    </div>
+      <div>
+        <Image className='rounded-full' src="/Introducing.jpg" alt="profil" width={400} height={400}/>
+      </div>
+    </section>
 
-    <div className='flex flex-row items-center justify-center gap-36  my-32'>
-    <div className='mx-4'>
-      <h1 className='font-bold text-3xl overflow-ellipsis'>My Activities<br/> during<br/> This Holiday</h1>
-      <button className='border-2 bg-black text-white p-3 mt-2' type='button'>My Activities</button>
-    </div>
-    <Image src="/kotak2.jpeg" alt="gambar-index-2" width={500} height={500}/>
-    </div>
+    <section className=' text-white bg-slate-700 rounded-2xl'>
+      <h1 className='text-center text-2xl font-bold p-16'>
+        What I have Learnt
+      </h1>
+      <article className='px-10'>
+        <h1 className='text-xl'>Language</h1>
+        <main className='flex flex-row flex-wrap gap-10 lg:justify-center'>
+        <Container asal="/js.svg" bahasa="JavaScript"/>
+        <Container asal="/php.svg" bahasa="PHP"/>
+        <Container asal="/python.svg" bahasa="Python"/>           
+        </main>  
+      </article>
+
+      <article className='px-10 mt-10'>
+        <h1 className='text-xl'>Frontend</h1>
+        <main className='flex flex-wrap gap-10 flex-row lg:justify-center'>
+        <Container asal="/html.svg" bahasa="HTML"/>
+        <Container asal="/css.png" bahasa="CSS"/>
+        <Container asal="/tail.svg" bahasa="Tailwind"/>
+        <Container asal="/js.svg" bahasa="JavaScript"/>
+        <Container asal="/html.svg" bahasa="HTML"/>
+        <Container asal="/css.png" bahasa="CSS"/>
+        <Container asal="/tail.svg" bahasa="Tailwind"/>
+        <Container asal="/js.svg" bahasa="JavaScript"/>           
+        </main>  
+      </article>
+
+      <article className='p-10'>
+        <h1 className='text-xl'>Currently Learning</h1>
+        <main className='flex flex-row flex-wrap gap-10 lg:justify-center'>
+        <Container asal="/react.png" bahasa="React"/>
+        <Container asal="/golang.svg" bahasa="Golang"/>
+        </main>
+      </article>
+    </section>
+
+    <section className=''>
+
+    </section>
     <Footer/>
-
+    </main>
     </>
   )
 }
