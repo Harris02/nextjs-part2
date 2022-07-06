@@ -16,7 +16,7 @@ export default function About() {
             <Image className='rounded-full text' src="/Introducing.jpg" alt="profil" width={300} height={300}/>
         </div>
         <article>
-            <p className='text-lg py-3 sm:text-base sm:text-justify sm:px-2 xs:text-sm'>Hello guys! I am Khairul Ihsannudin and now I am currently studying in UGM majoring Computer Science. Well, I have not learnt anything yet since I am new in this university. I am 17 years old and will be 18 this year. I live in Central Java and was born in Central Java too. Actually I wanna fill this using Lorem ipsum but I have more free time, lmao. For now I want to learn more about front-end things. Then, move to back-end and data science as I dunno about my passion. Just that. Probably I will need more time than I think.</p>
+            <p className='text-lg py-3 sm:text-base sm:text-justify sm:px-2 xs:text-sm'>Hello guys. I am Khairul Ihsannudin and now I am currently studying in UGM majoring Computer Science. Well, I have not learnt anything yet since I am new in this university. I am 17 years old and will be 18 this year. I live in Central Java and was born in Central Java too. Actually I wanna fill this using Lorem ipsum but I have more free time, lmao. For now I want to learn more about front-end things. Then, move to back-end and data science as I dunno about my passion. Just that. Probably I will need more time than I think.</p>
         </article>
         </section>
     <Footer/>
